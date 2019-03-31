@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Run Config Generator</title>
+</head>
+<body>
+    <H1>Run Config Generator:</H1>
+    <form action="/backend/generator.php" target="_blank">
+        First name:<br>
+        <input type="text" name="firstname" value="Chris"><br>
+        Last name:<br>
+        <input type="text" name="lastname" autofocus><br>
+        <br>
+        <input type="radio" name="package" value="progression" checked> Progression<br>
+        <input type="radio" name="package" value="amptest"> Amptest<br>
+        <br>
+        <fieldset>
+            <legend>Additional Options:</legend>
+            <input type="checkbox" name="dev" value="dev"> Dev mode<br>
+            <input type="checkbox" name="lc" value="lc"> Local Config<br>
+            <input type="checkbox" name="file" value="file"> Write to file only<br>
+        </fieldset>
+        <br>
+        Select a file: <input type="file" name="myFile"><br>
+        <br>
+            Python version: <br>
+            <input list="python">
+            <datalist id="python">
+                <option value="2.7">
+                <option value="3.4">
+                <option value="3.5">
+                <option value="3.7">
+                <option value="default">
+            </datalist>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <!--<input type="button" onclick="alert('You'll just click on anything won't you...')" value="Click Me!">-->
+</body>
+</html>

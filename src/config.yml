@@ -11,7 +11,7 @@ progression:
   deploy:
     location: C:\deploy\progression"
     python: 2.7
-    update-pip: True
+    update-pip: yes
     install:
       - progression
       - amptest

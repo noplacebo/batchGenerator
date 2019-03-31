@@ -1,0 +1,20 @@
+python:
+  2.7: C:\python27\python.exe
+  3.7: C:\Program Files\Python37\python.exe
+  3.7-32bit: C:\Program Files(x86)\Python37\python.exe
+pip:
+  default: \Scripts\pip.exe
+pip-options:
+  default-pre: pip install
+  default-post:
+progression:
+  deploy:
+    location: C:\deploy\progression"
+    python: 2.7
+    update-pip: True
+    install:
+      - progression
+      - amptest
+    requirements:
+      - fixate
+      - qtpy5
